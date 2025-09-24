@@ -70,7 +70,7 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
 
 ## 📐 아키텍처
 
-![Architecture](<img width="341" height="423" alt="image" src="https://github.com/user-attachments/assets/18f1bfd1-fb14-4006-a9f6-cb4046f28a08" />)
+<img width="341" height="423" alt="image" src="https://github.com/user-attachments/assets/18f1bfd1-fb14-4006-a9f6-cb4046f28a08" />
 
 ---
 
@@ -113,8 +113,8 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
   - 추가로 **멀티스레드 병렬 처리 / 체크포인트 기반 롤백** 설계안을 마련해 대규모 트래픽 대비.
 
 - **실행 결과 캡처**
-  ![JDBC](<img width="224" height="114" alt="image" src="https://github.com/user-attachments/assets/a9d38660-5bf1-462f-b894-d2acf541a149" />)
-  ![Batch](<img width="236" height="110" alt="image" src="https://github.com/user-attachments/assets/bffc59de-f5f3-4ebc-95a9-4683b004d179" />)
+  <img width="224" height="114" alt="image" src="https://github.com/user-attachments/assets/a9d38660-5bf1-462f-b894-d2acf541a149" />
+  <img width="236" height="110" alt="image" src="https://github.com/user-attachments/assets/bffc59de-f5f3-4ebc-95a9-4683b004d179" />
 
 - **추가 계획**
   - **Spring Batch / Quartz**로 삽입 스케줄링 최적화.  
@@ -130,10 +130,10 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
   - `saveAndFlush()` 적용으로 데드락은 해소했지만, **예약 수 불일치(정합성)** 문제는 남아있었음.
 
   **데드락 에러 로그**  
-  ![Deadlock Error](<img width="459" height="130" alt="image" src="https://github.com/user-attachments/assets/2cfcfc34-5e58-4a1d-b944-9e555b27af17" />)
+  <img width="459" height="130" alt="image" src="https://github.com/user-attachments/assets/2cfcfc34-5e58-4a1d-b944-9e555b27af17" />
 
   **데드락 해소 후에도 남은 정합성 이슈(예약 수 불일치)**  
-  ![Deadlock After — Wrong Count](<img width="271" height="121" alt="image" src="https://github.com/user-attachments/assets/5f7d21e4-d4ae-42e3-b5b7-9ce82cd99aec" />)
+  <img width="271" height="121" alt="image" src="https://github.com/user-attachments/assets/5f7d21e4-d4ae-42e3-b5b7-9ce82cd99aec" />
 
 - - **해결**
   - **락 전략 적용**
@@ -146,8 +146,8 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
     | 낙관적 락  | 3071ms    |
     | 비관적 락  | 909ms     |
 
-    ![낙관적 락 결과](<img width="351" height="154" alt="image" src="https://github.com/user-attachments/assets/71a6e385-5a28-4f0c-a685-f6fae615ff89" />)
-    ![비관적 락 결과](<img width="351" height="157" alt="image" src="https://github.com/user-attachments/assets/287b422c-bf53-4df7-a92e-455fec947f31" />)
+    <img width="351" height="154" alt="image" src="https://github.com/user-attachments/assets/71a6e385-5a28-4f0c-a685-f6fae615ff89" />
+    <img width="351" height="157" alt="image" src="https://github.com/user-attachments/assets/287b422c-bf53-4df7-a92e-455fec947f31" />
 
     → 비관적 락이 낙관적 락 대비 **3.38배 성능 개선**
 
@@ -160,7 +160,7 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
      - 예약 저장은 트랜잭션 내에서 처리  
      - 외부 결제 API 호출은 트랜잭션 밖으로 분리  
 
-     ![트랜잭션 범위 축소](<img width="694" height="303" alt="image" src="https://github.com/user-attachments/assets/ba490e25-72d7-413a-b218-4ae277ccc302" />)
+     <img width="694" height="303" alt="image" src="https://github.com/user-attachments/assets/ba490e25-72d7-413a-b218-4ae277ccc302" />
 
 - **결과**
   - **락 전략**:  
@@ -213,7 +213,7 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
 - 평균 지연시간: **5초**  
 - GitHub Actions 빌드 시간: **2분 41초**
 
-![분리 전 결과](<img width="471" height="156" alt="image" src="https://github.com/user-attachments/assets/e7f39452-a932-4111-8317-06322bd4af8c" />)
+<img width="471" height="156" alt="image" src="https://github.com/user-attachments/assets/e7f39452-a932-4111-8317-06322bd4af8c" />
 
 ---
 
@@ -222,7 +222,7 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
 - 평균 지연시간: **9초**  
 - GitHub Actions 빌드 시간: **1분 46초**
 
-![분리 후(동기) 결과](<img width="501" height="155" alt="image" src="https://github.com/user-attachments/assets/ea5bf62d-4d39-4456-998a-07bb561337cf" />)
+<img width="501" height="155" alt="image" src="https://github.com/user-attachments/assets/ea5bf62d-4d39-4456-998a-07bb561337cf" />
 
 ---
 
@@ -230,7 +230,7 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
 - 처리량(Request Rate): **285.39 r/s** (약 **2.9배 증가**)  
 - 평균 지연시간: **1~2초**  
 
-![Kafka 적용 결과](<img width="549" height="206" alt="image" src="https://github.com/user-attachments/assets/99a369f8-950c-40f9-9c3b-c7212ade8578" />)
+<img width="549" height="206" alt="image" src="https://github.com/user-attachments/assets/99a369f8-950c-40f9-9c3b-c7212ade8578" />
 
 #### 🔹 최종 비교
 
@@ -247,7 +247,7 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
   - 분리 전: 전체 서버 빌드/배포 **2분 41초**  
   - 분리 후: 결제 서버만 배포 → **1분 46초**  
 
-![빌드 시간 비교](<img width="319" height="153" alt="image" src="https://github.com/user-attachments/assets/86686b35-1069-4b20-85f3-3e96e7f0ad87" />)
+<img width="319" height="153" alt="image" src="https://github.com/user-attachments/assets/86686b35-1069-4b20-85f3-3e96e7f0ad87" />
 
 > 결제 서버 분리를 통해 **배포 속도가 약 35% 개선**되었으며, 운영 시 장애 영향 범위도 축소.
 
