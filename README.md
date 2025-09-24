@@ -230,7 +230,7 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
 - 처리량(Request Rate): **285.39 r/s** (약 **2.9배 증가**)  
 - 평균 지연시간: **1~2초**  
 
-<img width="549" height="206" alt="image" src="https://github.com/user-attachments/assets/99a369f8-950c-40f9-9c3b-c7212ade8578" />
+<img width="545" height="196" alt="image" src="https://github.com/user-attachments/assets/87ece0be-9ef2-49f8-8704-859fae261c54" />
 
 #### 🔹 최종 비교
 
