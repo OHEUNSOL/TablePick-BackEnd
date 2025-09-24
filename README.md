@@ -4,7 +4,7 @@
 > 제가 맡았던 **예약·결제 도메인**을 중심으로 **개인적으로 정리**해 둔 버전입니다.  
 > (원본 팀 프로젝트: [링크](https://github.com/orgs/4und-Cloud/repositories))
 
-> 협업 과정(일정표, 계획 문서 등)은 별도 문서에 정리했습니다.  
+> 협업 과정은 별도 문서에 정리했습니다.  
 > [협업 문서 보기](https://young-shallot-30c.notion.site/27859cec87688005aa10dec9345d90f7?source=copy_link)
 
 ---
