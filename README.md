@@ -1,2 +1,39 @@
-TablePick-BackEnd
-Goorm X Kakao ProFect 에서 진행한 4조 4und Cloud의 프로젝트 TablePick BackEnd팀 입니다.
+
+## 🔗 관련 레포지토리
+- [TablePick-Payment-Server](https://github.com/OHEUNSOL/TablePick-Payment)  
+  → 예약 서비스와 분리된 **결제 서버**, Kafka 이벤트 및 외부 결제 API 처리 담당
+- [TablePick-External-Payment-API](https://github.com/OHEUNSOL/TablePick-Fake-Pg)  
+  → **외부 결제 API 서버** 시뮬레이션, 테스트 및 장애 대응 로직 검증용
+
+---  
+
+## 🚀 프로젝트 개요
+TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·결제 플랫폼**입니다.  
+예약 슬롯 관리, 결제 처리, 성능 최적화를 중점적으로 개선했습니다.
+
+---
+
+## 🛠 기술 스택
+- **Backend**: Java 21, Spring Boot
+- **Infra / Data**: Kafka, MySQL, Redis, Docker
+- **Testing / Observability**: k6, Grafana, Prometheus
+
+---
+
+## 📈 주요 성과
+- **TPS 2.9배 향상** (Kafka 기반 비동기 구조 전환)  
+- 예약 슬롯 삽입 시간 **33분 → 16초** (JDBC Batch + Lock 전략)  
+- 결제 서버 분리 → 외부 API 호출 안정성 강화  
+- k6 기반 부하 테스트 시나리오 작성 및 모니터링 대시보드 구축  
+
+---
+
+## 🔧 개선 중 (In Progress)
+- 예약 → 결제 흐름을 **Kafka 기반 비동기 구조**로 전환
+- **응답 속도 수치화** 및 k6 부하 테스트 진행 (TPS, 응답 지연 등 기록)
+
+## 📝 남은 작업 (TODO)
+- **DB 인덱스 최적화**: 예약 슬롯/식당 데이터 조회 성능 개선
+- **Outbox 패턴** 안정화: 이벤트 발행의 신뢰성 보장 (트랜잭션 경계 명확화)
+- **데이터 정합성 보강**: 예약 취소/결제 취소 시 트랜잭션 처리
+- **에러 핸들링 강화**: 외부 결제 API 장애 상황 시 재시도 & 보상 처리
