@@ -1,3 +1,10 @@
+# TablePick-BackEnd
+
+> 이 레포는 **팀 프로젝트**로 진행한 식당 예약·결제 플랫폼에서  
+> 제가 맡았던 **예약·결제 도메인**을 중심으로 **개인적으로 정리**해 둔 버전입니다.  
+> (원본 팀 프로젝트: [링크](https://github.com/orgs/4und-Cloud/repositories))
+
+---
 
 ## 🔗 관련 레포지토리
 - [TablePick-Payment-Server](https://github.com/OHEUNSOL/TablePick-Payment)  
