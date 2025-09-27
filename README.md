@@ -294,4 +294,4 @@ TablePick은 대규모 트래픽을 처리할 수 있는 **레스토랑 예약·
 ---
 
 ## 🎥 시연 영상
-[![시연 영상](https://drive.google.com/file/d/1ZoBAgl4vPlDY5-KWDxwHWnN-WZnCq-e9/view?usp=sharing)
+https://drive.google.com/file/d/1ZoBAgl4vPlDY5-KWDxwHWnN-WZnCq-e9/view?usp=sharing
